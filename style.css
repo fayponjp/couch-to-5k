@@ -1,0 +1,68 @@
+:root {
+    --light-salm: #feede3;
+    --dark-salm: #f9ae89;
+    --checked: #f48d59;
+    --hover: #f89b6d;
+    --light-bluegreen: #cbf3f0;
+    --dark-bluegreen: #2ec4b6;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+table, th, td {
+    border: 1px solid #fff;
+}
+
+table {
+    width: 90vw;
+    text-align: center;
+    border-collapse: collapse;
+    background: linear-gradient(to bottom, var(--light-salm), var(--dark-salm));
+
+    margin: 1em auto;
+}
+
+thead {
+    font-weight: 600;
+    background-color: var(--dark-salm);
+}
+
+tr {
+    background: inherit;
+}
+
+th, td {
+    padding: 1em;
+    background: none;
+}
+
+tbody td {
+    cursor: pointer;
+    transition: 0.4s background-color;
+}
+
+tbody td:hover,
+tbody td:focus {
+    background-color: var(--hover);
+}
+
+td.checked {
+    background-color: var(--checked);
+}
+
+.week {
+    width: 4%;
+}
+
+.activity {
+    width: 32%
+}
