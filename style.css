@@ -9,6 +9,7 @@
     --button-purple-hover: #a479ea;
     --activity-walk: #89232e;
     --activity-jog: #f16531;
+    --dark-font: #191a1f;
 }
 
 *,
@@ -23,11 +24,15 @@
 FLEX CONTAINER
 -------------- */
 
-.activity-container, .activity-jog, .activity-walk, .activity-reps {
+.activity-container, .activity-jog, .activity-walk, .activity-reps, .grid-item {
     display: flex;
 }
 
-.activity-jog, .activity-walk {
+.activity-jog, .activity-walk, .grid-item {
+    flex-direction: column;
+}
+
+.activity-container {
     flex-direction: column;
 }
 
@@ -37,10 +42,7 @@ STYLING
 
 body {
     font-family: 'Inter', sans-serif;
-}
-
-table, th, td {
-    border: 1px solid #fff;
+    color: var(--dark-font);
 }
 
 .grid {
@@ -56,86 +58,19 @@ table, th, td {
     text-align: center;
     background-color: none;
 
-    display: flex;
-    flex-direction: column;
-}
-
-table {
-    width: 100vw;
-    text-align: center;
-    border-collapse: collapse;
-    background: linear-gradient(to bottom, var(--light-salm), var(--dark-salm));
-    font-size: 1rem;
-
-    margin: 1em auto;
-}
-
-thead, .column-header {
-    font-weight: 600;
-    background-color: var(--dark-salm);
-    padding: 1em;
-}
-
-tr {
-    background: inherit;
-}
-
-th, td {
-    padding: 1em 0.5em;
-    background: none;
-}
-
-tbody td {
-    cursor: pointer;
-    transition: 0.4s background-color;
-}
-
-tbody td:hover,
-tbody td:not(:last-child):focus {
-    background-color: var(--hover);
-}
-
-td.checked {
-    background-color: var(--checked);
-    text-shadow: 1px 1px 1px black;
-}
-
-/* td:last-child {
-    background-color: #fff;
-    padding: 0;
-} */
-
-td button {
-    border: none;
-    background-color: var(--button-purple);
-    /* padding: 1em 1.2em; */
-    height: 100%;
-    display: block;
-    cursor: pointer;
-}
-
-td button:hover,
-td button:focus {
-    background-color: var(--button-purple-hover);
-}
-
-.week {
-    width: 2%;
-}
-
-.activity {
-    width: 32%;
-    text-align: center;
-}
-
-.options-td {
-    width: 2%;
+    padding: 1em 0;
 }
 
 .activity-container {
-    flex-direction: row;
     gap: 1em;
+    align-items: center;
     margin: 0 auto;
+}
+
+.column-header {
+    font-weight: 600;
+    background-color: var(--dark-salm);
+    padding: 1em;
 }
 
 .activity-walk {
@@ -144,4 +79,15 @@ td button:focus {
 
 .activity-jog {
     color: var(--activity-jog);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .week {
+        grid-column: span 3;
+        background-color: var(--dark-salm);
+    }
 }
