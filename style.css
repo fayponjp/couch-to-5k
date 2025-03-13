@@ -5,6 +5,10 @@
     --hover: #f89b6d;
     --light-bluegreen: #cbf3f0;
     --dark-bluegreen: #2ec4b6;
+    --button-purple: #c3a9ee;
+    --button-purple-hover: #a479ea;
+    --activity-walk: #89232e;
+    --activity-jog: #f16531;
 }
 
 *,
@@ -12,7 +16,24 @@
 *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* --------------
+FLEX CONTAINER
+-------------- */
+
+.activity-container, .activity-jog, .activity-walk, .activity-reps {
+    display: flex;
+}
+
+.activity-jog, .activity-walk {
+    flex-direction: column;
+}
+
+/* --------------
+STYLING
+-------------- */
 
 body {
     font-family: 'Inter', sans-serif;
@@ -22,18 +43,37 @@ table, th, td {
     border: 1px solid #fff;
 }
 
+.grid {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: auto 1fr 1fr 1fr;
+
+    background: linear-gradient(to bottom, var(--light-salm), var(--dark-salm));
+}
+
+.grid-item {
+    border: 1.5px solid #fff;
+    text-align: center;
+    background-color: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
 table {
-    width: 90vw;
+    width: 100vw;
     text-align: center;
     border-collapse: collapse;
     background: linear-gradient(to bottom, var(--light-salm), var(--dark-salm));
+    font-size: 1rem;
 
     margin: 1em auto;
 }
 
-thead {
+thead, .column-header {
     font-weight: 600;
     background-color: var(--dark-salm);
+    padding: 1em;
 }
 
 tr {
@@ -41,7 +81,7 @@ tr {
 }
 
 th, td {
-    padding: 1em;
+    padding: 1em 0.5em;
     background: none;
 }
 
@@ -51,18 +91,57 @@ tbody td {
 }
 
 tbody td:hover,
-tbody td:focus {
+tbody td:not(:last-child):focus {
     background-color: var(--hover);
 }
 
 td.checked {
     background-color: var(--checked);
+    text-shadow: 1px 1px 1px black;
+}
+
+/* td:last-child {
+    background-color: #fff;
+    padding: 0;
+} */
+
+td button {
+    border: none;
+    background-color: var(--button-purple);
+    /* padding: 1em 1.2em; */
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+td button:hover,
+td button:focus {
+    background-color: var(--button-purple-hover);
 }
 
 .week {
-    width: 4%;
+    width: 2%;
 }
 
 .activity {
-    width: 32%
+    width: 32%;
+    text-align: center;
+}
+
+.options-td {
+    width: 2%;
+}
+
+.activity-container {
+    flex-direction: row;
+    gap: 1em;
+    margin: 0 auto;
+}
+
+.activity-walk {
+    color: var(--activity-walk)
+}
+
+.activity-jog {
+    color: var(--activity-jog);
 }
