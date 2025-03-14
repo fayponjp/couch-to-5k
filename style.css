@@ -87,7 +87,7 @@ body {
     column-gap: 1rem;
 }
 
-.column-header {
+.column-header, .week.column-header {
     font-weight: 600;
     background-color: var(--hover);
     padding: 1em;
@@ -109,14 +109,12 @@ body {
 @media (min-width: 1024px) {
     .grid {
         grid-template-columns: auto 1fr 1fr 1fr;
+        width: 95vw;
+        margin: 1em auto;
     }
 
     .week {
         grid-column: span 1;
         background-color: var(--dark-salm);
     }
-
-    /* .column-header:not(.week) {
-        grid-row-start: 1;
-    } */
 }
