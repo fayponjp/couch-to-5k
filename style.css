@@ -65,12 +65,6 @@ body {
     padding: 1em 0;
 }
 
-.workout:hover {
-    cursor: pointer;
-    background-color: var(--hover);
-    text-shadow: 0px 1px var(--dark-font);
-}
-
 .week {
     grid-column: span 3;
     padding: .5em 0;
@@ -116,5 +110,11 @@ body {
     .week {
         grid-column: span 1;
         background-color: var(--dark-salm);
+    }
+
+    .workout:hover {
+        cursor: pointer;
+        background-color: var(--hover);
+        text-shadow: 0px 1px var(--dark-font);
     }
 }
