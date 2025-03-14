@@ -112,11 +112,11 @@ body {
     }
 
     .week {
-        grid-column: span 3;
+        grid-column: span 1;
         background-color: var(--dark-salm);
     }
 
-    .column-header:not(.week) {
+    /* .column-header:not(.week) {
         grid-row-start: 1;
-    }
+    } */
 }
