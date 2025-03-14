@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -14,344 +19,456 @@
 </head>
 <body>
     <main>
-        <div class="grid">
-                <div class="grid-item column-header week"><p>Wk</p></div>
-                <div class="grid-item column-header">Day 1</div>
-                <div class="grid-item column-header">Day 2</div>
-                <div class="grid-item column-header">Day 3</div>
+        <div class="grid" id="grid">
+            <div class="grid-item column-header week"><p>Wk</p></div>
+            <div class="grid-item column-header">Day 1</div>
+            <div class="grid-item column-header">Day 2</div>
+            <div class="grid-item column-header">Day 3</div>
 
-                <!-- FIRST ROW -->
-                <div class="grid-item week">
-                    <p>1</p>
-                </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
-                        <div class="activity-jog">                    
-                            <i class="fa-solid fa-person-running"></i>
-                            <span>1 min</span>
-                        </div>
-                        <div class="activity-walk">
-                            <i class="fa-solid fa-person-walking"></i>
-                            <span>1.5 min</span>
-                        </div>
-                        <span class="activity-reps">x8</span>
+            <!-- FIRST ROW -->
+            <div class="grid-item week">
+                <p>1</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-jog">                    
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>1 min</span>
                     </div>
-                    <p>Total = 20 min</p>
-                </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
-                        <div class="activity-jog">                    
-                            <i class="fa-solid fa-person-running"></i>
-                            <span>1 min</span>
-                        </div>
-                        <div class="activity-walk">
-                            <i class="fa-solid fa-person-walking"></i>
-                            <span>1.5 min</span>
-                        </div>
-                        <span class="activity-reps">x8</span>
+                    <div class="activity-walk">
+                        <i class="fa-solid fa-person-walking"></i>
+                        <span>1.5 min</span>
                     </div>
-                    <p>Total = 20 min</p>
+                    <span class="activity-reps">x8</span>
                 </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
-                        <div class="activity-jog">                    
-                            <i class="fa-solid fa-person-running"></i>
-                            <span>1 min</span>
-                        </div>
-                        <div class="activity-walk">
-                            <i class="fa-solid fa-person-walking"></i>
-                            <span>1.5 min</span>
-                        </div>
-                        <span class="activity-reps">x8</span>
+                <p>Total = 20 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-jog">                    
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>1 min</span>
                     </div>
-                    <p>Total = 20 min</p>
+                    <div class="activity-walk">
+                        <i class="fa-solid fa-person-walking"></i>
+                        <span>1.5 min</span>
+                    </div>
+                    <span class="activity-reps">x8</span>
                 </div>
+                <p>Total = 20 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-jog">                    
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>1 min</span>
+                    </div>
+                    <div class="activity-walk">
+                        <i class="fa-solid fa-person-walking"></i>
+                        <span>1.5 min</span>
+                    </div>
+                    <span class="activity-reps">x8</span>
+                </div>
+                <p>Total = 20 min</p>
+            </div>
 
-                <!-- SECOND ROW -->
-                <div class="grid-item week">
-                    <p>2</p>
+            <!-- SECOND ROW -->
+            <div class="grid-item week">
+                <p>2</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-jog">                    
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>1.5 min</span>
+                    </div>
+                    <div class="activity-walk">
+                        <i class="fa-solid fa-person-walking"></i>
+                        <span>2 min</span>
+                    </div>
+                    <span class="activity-reps">x6</span>
                 </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
+                <p>Total = 21 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-jog">                    
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>1.5 min</span>
+                    </div>
+                    <div class="activity-walk">
+                        <i class="fa-solid fa-person-walking"></i>
+                        <span>2 min</span>
+                    </div>
+                    <span class="activity-reps">x6</span>
+                </div>
+                <p>Total = 21 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-jog">                    
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>1.5 min</span>
+                    </div>
+                    <div class="activity-walk">
+                        <i class="fa-solid fa-person-walking"></i>
+                        <span>2 min</span>
+                    </div>
+                    <span class="activity-reps">x6</span>
+                </div>
+                <p>Total = 21 min</p>
+            </div>
+
+            <!-- THIRD ROW -->
+            <div class="grid-item week">
+                <p>3</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-multi">
                         <div class="activity-jog">                    
                             <i class="fa-solid fa-person-running"></i>
                             <span>1.5 min</span>
                         </div>
                         <div class="activity-walk">
                             <i class="fa-solid fa-person-walking"></i>
-                            <span>2 min</span>
+                            <span>1.5 min</span>
                         </div>
-                        <span class="activity-reps">x6</span>
                     </div>
-                    <p>Total = 21 min</p>
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>3 min</span>
+                        </div>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>3 min</span>
+                        </div>
+                    </div>
+                    <span class="activity-reps">x2</span>
                 </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
+                <p>Total = 18 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-multi">
                         <div class="activity-jog">                    
                             <i class="fa-solid fa-person-running"></i>
                             <span>1.5 min</span>
                         </div>
                         <div class="activity-walk">
                             <i class="fa-solid fa-person-walking"></i>
-                            <span>2 min</span>
+                            <span>1.5 min</span>
                         </div>
-                        <span class="activity-reps">x6</span>
                     </div>
-                    <p>Total = 21 min</p>
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>3 min</span>
+                        </div>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>3 min</span>
+                        </div>
+                    </div>
+                    <span class="activity-reps">x2</span>
                 </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
+                <p>Total = 18 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-multi">
                         <div class="activity-jog">                    
                             <i class="fa-solid fa-person-running"></i>
                             <span>1.5 min</span>
                         </div>
                         <div class="activity-walk">
                             <i class="fa-solid fa-person-walking"></i>
-                            <span>2 min</span>
+                            <span>1.5 min</span>
                         </div>
-                        <span class="activity-reps">x6</span>
                     </div>
-                    <p>Total = 21 min</p>
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>3 min</span>
+                        </div>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>3 min</span>
+                        </div>
+                    </div>
+                    <span class="activity-reps">x2</span>
                 </div>
+                <p>Total = 18 min</p>
+            </div>
 
-                <!-- THIRD ROW -->
-                <div class="grid-item week">
-                    <p>3</p>
-                </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>1.5 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>1.5 min</span>
-                            </div>
+            <!-- FOURTH ROW -->
+            <div class="grid-item week">
+                <p>4</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>3 min</span>
                         </div>
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>3 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>3 min</span>
-                            </div>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>1.5 min</span>
                         </div>
-                        <span class="activity-reps">x2</span>
                     </div>
-                    <p>Total = 18 min</p>
-                </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>1.5 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>1.5 min</span>
-                            </div>
-                        </div>
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>3 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>3 min</span>
-                            </div>
-                        </div>
-                        <span class="activity-reps">x2</span>
-                    </div>
-                    <p>Total = 18 min</p>
-                </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>1.5 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>1.5 min</span>
-                            </div>
-                        </div>
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>3 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>3 min</span>
-                            </div>
-                        </div>
-                        <span class="activity-reps">x2</span>
-                    </div>
-                    <p>Total = 18 min</p>
-                </div>
-
-                <!-- FOURTH ROW -->
-                <div class="grid-item week">
-                    <p>4</p>
-                </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>3 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>1.5 min</span>
-                            </div>
-                        </div>
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>5 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>2.5 min</span>
-                            </div>
-                        </div>
-                        <span class="activity-reps">x2</span>
-                    </div>
-                    <p>Total = 23 min</p>
-                </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>3 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>1.5 min</span>
-                            </div>
-                        </div>
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>5 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>2.5 min</span>
-                            </div>
-                        </div>
-                        <span class="activity-reps">x2</span>
-                    </div>
-                    <p>Total = 23 min</p>
-                </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>3 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>1.5 min</span>
-                            </div>
-                        </div>
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>5 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>2.5 min</span>
-                            </div>
-                        </div>
-                        <span class="activity-reps">x2</span>
-                    </div>
-                    <p>Total = 23 min</p>
-                </div>
-
-                <!-- FIFTH ROW -->
-                <div class="grid-item week">
-                    <p>5</p>
-                </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
+                    <div class="activity-multi">
                         <div class="activity-jog">                    
                             <i class="fa-solid fa-person-running"></i>
                             <span>5 min</span>
                         </div>
                         <div class="activity-walk">
                             <i class="fa-solid fa-person-walking"></i>
+                            <span>2.5 min</span>
+                        </div>
+                    </div>
+                    <span class="activity-reps">x2</span>
+                </div>
+                <p>Total = 23 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
                             <span>3 min</span>
                         </div>
-                        <span class="activity-reps">x3</span>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>1.5 min</span>
+                        </div>
                     </div>
-                    <p>Total = 24 min</p>
-                </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>3 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>1.5 min</span>
-                            </div>
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>5 min</span>
                         </div>
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>5 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>2.5 min</span>
-                            </div>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>2.5 min</span>
                         </div>
-                        <span class="activity-reps">x2</span>
                     </div>
-                    <p>Total = 21.5 min</p>
+                    <span class="activity-reps">x2</span>
                 </div>
-                <div class="grid-item workout">
-                    <div class="activity-container">
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>3 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>1.5 min</span>
-                            </div>
+                <p>Total = 23 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>3 min</span>
                         </div>
-                        <div class="activity-multi">
-                            <div class="activity-jog">                    
-                                <i class="fa-solid fa-person-running"></i>
-                                <span>5 min</span>
-                            </div>
-                            <div class="activity-walk">
-                                <i class="fa-solid fa-person-walking"></i>
-                                <span>2.5 min</span>
-                            </div>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>1.5 min</span>
                         </div>
-                        <span class="activity-reps">x2</span>
                     </div>
-                    <p>Total = 21.5 min</p>
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>5 min</span>
+                        </div>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>2.5 min</span>
+                        </div>
+                    </div>
+                    <span class="activity-reps">x2</span>
                 </div>
+                <p>Total = 23 min</p>
+            </div>
+
+            <!-- FIFTH ROW -->
+            <div class="grid-item week">
+                <p>5</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-jog">                    
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>5 min</span>
+                    </div>
+                    <div class="activity-walk">
+                        <i class="fa-solid fa-person-walking"></i>
+                        <span>3 min</span>
+                    </div>
+                    <span class="activity-reps">x3</span>
+                </div>
+                <p>Total = 24 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>8 min</span>
+                        </div>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>5 min</span>
+                        </div>
+                    </div>
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>8 min</span>
+                        </div>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>5 min</span>
+                        </div>
+                    </div>
+                    <span class="activity-reps">x1</span>
+                </div>
+                <p>Total = 24 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-jog">                    
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>21 min</span>
+                    </div>
+                    <div class="activity-walk">
+                        <i class="fa-solid fa-person-walking"></i>
+                        <span>5 min</span>
+                    </div>
+                    <span class="activity-reps">x1</span>
+                </div>
+                <p>Total = 26 min</p>
+            </div>
+
+            <!-- SIXTH ROW -->
+            <div class="grid-item week">
+                <p>6</p>
+            </div>
+            <div class="grid-item workout">
+                    <div class="activity-jog">                    
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>25 min</span>
+                    </div>
+                <p>Total = 25 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-container">
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>8 min</span>
+                        </div>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>5 min</span>
+                        </div>
+                    </div>
+                    <div class="activity-multi">
+                        <div class="activity-jog">                    
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>8 min</span>
+                        </div>
+                        <div class="activity-walk">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>5 min</span>
+                        </div>
+                    </div>
+                    <span class="activity-reps">x1</span>
+                </div>
+                <p>Total = 26 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-jog">                    
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>21 min</span>
+                </div>
+                <p>Total = 21 min</p>
+            </div>
+
+            <!-- SEVENTH ROW -->
+            <div class="grid-item week">
+                <p>7</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-jog">                    
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>25 min</span>
+                </div>
+                <p>Total = 25 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-jog">                    
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>25 min</span>
+                </div>
+                <p>Total = 25 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-jog">                    
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>28 min</span>
+                </div>
+                <p>Total = 28 min</p>
+            </div>
+
+            <!-- EIGHTH ROW -->
+            <div class="grid-item week">
+                <p>8</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-jog">                    
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>28 min</span>
+                </div>
+                <p>Total = 28 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-jog">                    
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>28 min</span>
+                </div>
+                <p>Total = 28 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-jog">                    
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>30 min</span>
+                </div>
+                <p>Total = 30 min</p>
+            </div>
+
+            <!-- NINTH ROW -->
+            <div class="grid-item week">
+                <p>9</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-jog">                    
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>30 min</span>
+                </div>
+                <p>Total = 30 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-jog">                    
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>30 min</span>
+                </div>
+                <p>Total = 30 min</p>
+            </div>
+            <div class="grid-item workout">
+                <div class="activity-jog">                    
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>30 min</span>
+                </div>
+                <p>Total = 30 min</p>
+            </div>
         </div>
     </main>
 
+    <script src="/index.js" type="module"></script>
 </body>
 </html>

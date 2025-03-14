@@ -58,7 +58,9 @@ body {
     border: 1.5px solid #fff;
     text-align: center;
     background-color: none;
+}
 
+.workout {
     padding: 1em 0;
 }
 
@@ -66,11 +68,13 @@ body {
 .workout:focus {
     cursor: pointer;
     background-color: var(--hover);
-    text-shadow: 0px 1px 1px var(--dark-font);
+    text-shadow: 0px 1px var(--dark-font);
 }
 
 .week {
     grid-column: span 3;
+    padding: .5em 0;
+    background-color: var(--checked);
 }
 
 .activity-container {
@@ -85,7 +89,7 @@ body {
 
 .column-header {
     font-weight: 600;
-    background-color: var(--dark-salm);
+    background-color: var(--hover);
     padding: 1em;
 }
 
@@ -95,6 +99,11 @@ body {
 
 .activity-jog {
     color: var(--activity-jog);
+}
+
+.checked {
+    background-color: var(--checked);
+    text-shadow: 0px 1px 1px var(--dark-font);
 }
 
 @media (min-width: 1024px) {

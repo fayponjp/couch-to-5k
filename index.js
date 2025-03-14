@@ -1,8 +1,8 @@
-// document.addEventListener("click", (e) => {
-//     const tableBody = document.getElementById("table-body");
-//     if (tableBody.contains(e.target)) {
-//         if ((e.target.nodeName === 'TD' || e.target.parentElement.nodeName === 'TD')) {
-//             e.target.closest("td").classList.toggle("checked");
-//         }
-//     }
-// });
+document.addEventListener("click", (e) => {
+    const tableBody = document.getElementById("grid");
+    if (tableBody.contains(e.target)) {
+        if ((e.target.classList.contains("grid-item") || e.target.closest(".grid-item").contains(e.target))) {
+            e.target.closest(".grid-item").classList.toggle("checked");
+        }
+    }
+});
